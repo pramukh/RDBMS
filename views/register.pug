@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	h2 Register
+	
+	form(action="/register",method="POST",id="regForm")
+		input(type='text',placeholder="Full Name",name="fullname")
+		input(type='text',placeholder="Username",name="username")
+		input(type='password',placeholder="********",name="password")
+		input(type='text',placeholder='Email',name='email')
+		input(type='date',name='dob',placeholder='Date of Birth')
+		input(type='submit',value='Register')
